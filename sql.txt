@@ -1,0 +1,19 @@
+CREATE DATABASE company_db;
+CREATE USER airflow WITH PASSWORD 'PASSWORD';
+GRANT ALL PRIVILEGES ON DATABASE company_db TO airflow;
+
+
+#############################
+
+to create employee table
+
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    age INTEGER,
+    department VARCHAR(50),
+    start_date DATE,
+    salary NUMERIC,
+    tenure INTEGER,
+    salary_category VARCHAR(10)
+);
